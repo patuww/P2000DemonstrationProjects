@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
 
+
 namespace StartingPoint
 {
 	/// <summary>
@@ -51,37 +52,37 @@ namespace StartingPoint
 		public void TestMovie()
 		{
 			// Test title property
-			Assertion.AssertEquals("Cinderella", m_Cinderella.Title);
-			Assertion.AssertEquals("Star Wars", m_StarWars.Title);
-			Assertion.AssertEquals("Gladiator", m_Gladiator.Title);
+			Assert.Equals("Cinderella", m_Cinderella.Title);
+			Assert.Equals("Star Wars", m_StarWars.Title);
+			Assert.Equals("Gladiator", m_Gladiator.Title);
 
 			// Test price code
-			Assertion.AssertEquals(PriceCodes.Childrens, m_Cinderella.PriceCode);
-			Assertion.AssertEquals(PriceCodes.Regular, m_StarWars.PriceCode);
-			Assertion.AssertEquals(PriceCodes.NewRelease, m_Gladiator.PriceCode);
+			Assert.Equals(PriceCodes.Childrens, m_Cinderella.PriceCode);
+			Assert.Equals(PriceCodes.Regular, m_StarWars.PriceCode);
+			Assert.Equals(PriceCodes.NewRelease, m_Gladiator.PriceCode);
 		}
 
 		[Test]
 		public void TestRental()
 		{
 			// Test Movie property
-			Assertion.AssertEquals(m_Cinderella, m_Rental1.Movie);
-			Assertion.AssertEquals(m_StarWars, m_Rental2.Movie);
-			Assertion.AssertEquals(m_Gladiator, m_Rental3.Movie);
+			Assert.Equals(m_Cinderella, m_Rental1.Movie);
+			Assert.Equals(m_StarWars, m_Rental2.Movie);
+			Assert.Equals(m_Gladiator, m_Rental3.Movie);
 
 			// Test DaysRented property
-			Assertion.AssertEquals(5, m_Rental1.DaysRented);
-			Assertion.AssertEquals(5, m_Rental1.DaysRented);
-			Assertion.AssertEquals(5, m_Rental1.DaysRented);
+			Assert.Equals(5, m_Rental1.DaysRented);
+			Assert.Equals(5, m_Rental1.DaysRented);
+			Assert.Equals(5, m_Rental1.DaysRented);
 		}
 
 		[Test]
 		public void TestCustomer()
 		{
 			// Test Name property
-			Assertion.AssertEquals("Mickey Mouse", m_MickeyMouse.Name);
-			Assertion.AssertEquals("Donald Duck", m_DonaldDuck.Name);
-			Assertion.AssertEquals("Minnie Mouse", m_MinnieMouse.Name);
+			Assert.Equals("Mickey Mouse", m_MickeyMouse.Name);
+			Assert.Equals("Donald Duck", m_DonaldDuck.Name);
+			Assert.Equals("Minnie Mouse", m_MinnieMouse.Name);
 
 			// Test AddRental() method - set up for test
 			m_MickeyMouse.AddRental(m_Rental1);
@@ -122,12 +123,12 @@ namespace StartingPoint
 			 * generating a statement in the expected format. */
 
 			// Test the title and price items
-			Assertion.AssertEquals("Cinderella", results[2]);
-			Assertion.AssertEquals(3, Convert.ToDouble(results[3]));
-			Assertion.AssertEquals("Star Wars", results[5]);
-			Assertion.AssertEquals(6.5, Convert.ToDouble(results[6]));
-			Assertion.AssertEquals("Gladiator", results[8]);
-			Assertion.AssertEquals(15, Convert.ToDouble(results[9]));
+			Assert.Equals("Cinderella", results[2]);
+			Assert.Equals(3, Convert.ToDouble(results[3]));
+			Assert.Equals("Star Wars", results[5]);
+			Assert.Equals(6.5, Convert.ToDouble(results[6]));
+			Assert.Equals("Gladiator", results[8]);
+			Assert.Equals(15, Convert.ToDouble(results[9]));
 		}
 
 	}
