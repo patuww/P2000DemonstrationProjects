@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BBBA709-2FFF-4529-9B50-F569CCA348B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JCI.Security.Data</RootNamespace>
+    <AssemblyName>JCI.Security.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.2.2.1.4\lib\net40-Full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\AccessGroupResponse.cs" />
+    <Compile Include="DTO\AlarmResponse.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DTO\CompanyResponse.cs" />
+    <Compile Include="DTO\CounterResponse.cs" />
+    <Compile Include="DTO\DepartmentResponse.cs" />
+    <Compile Include="DTO\DivisionResponse.cs" />
+    <Compile Include="DTO\DoorResponse.cs" />
+    <Compile Include="DTO\AlarmEnum.cs" />
+    <Compile Include="DTO\DoorScheduledResponse.cs" />
+    <Compile Include="DTO\EntityGetIdentifierListResponse.cs" />
+    <Compile Include="DTO\EntityGetListResponse.cs" />
+    <Compile Include="DTO\EntityGetUDFResponse.cs" />
+    <Compile Include="DTO\EntityResponse.cs" />
+    <Compile Include="DTO\EventResponse.cs" />
+    <Compile Include="DTO\IdentifierGetInfoResponse.cs" />
+    <Compile Include="DTO\Input.cs" />
+    <Compile Include="DTO\InputGetListResponse.cs" />
+    <Compile Include="DTO\InputGetStatusResponse.cs" />
+    <Compile Include="DTO\InterlockGetListResponse.cs" />
+    <Compile Include="DTO\InterlockGetStatusResponse.cs" />
+    <Compile Include="DTO\TerminalResponse.cs" />
+    <Compile Include="DTO\MultiCommandGetStatusResponse.cs" />
+    <Compile Include="DTO\MultiCommandResponse.cs" />
+    <Compile Include="DTO\Output.cs" />
+    <Compile Include="DTO\OutputGetScheduledResponse.cs" />
+    <Compile Include="DTO\OutputGetStatusResponse.cs" />
+    <Compile Include="DTO\OutputResponse.cs" />
+    <Compile Include="DTO\P2000GetSystemInfoResponse.cs" />
+    <Compile Include="DTO\P2000GetVersionResponse.cs" />
+    <Compile Include="DTO\P2000LoginResponse.cs" />
+    <Compile Include="DTO\PanelGetComponentsResponse.cs" />
+    <Compile Include="DTO\PanelGetListResponse.cs" />
+    <Compile Include="DTO\PartitionResponse.cs" />
+    <Compile Include="DTO\TeamResponse.cs" />
+    <Compile Include="DTO\Terminal.cs" />
+    <Compile Include="DTO\TimezoneGetInfoResponse.cs" />
+    <Compile Include="DTO\TimezoneGetListResponse.cs" />
+    <Compile Include="IAccessGroup.cs" />
+    <Compile Include="IAlarm.cs" />
+    <Compile Include="ICompany.cs" />
+    <Compile Include="ICounter.cs" />
+    <Compile Include="IDataCommandEngine.cs" />
+    <Compile Include="IDepartment.cs" />
+    <Compile Include="IDivision.cs" />
+    <Compile Include="IDoor.cs" />
+    <Compile Include="IEntity.cs" />
+    <Compile Include="IEvent.cs" />
+    <Compile Include="IIdentifier.cs" />
+    <Compile Include="IInput.cs" />
+    <Compile Include="IInterlock.cs" />
+    <Compile Include="Implementations\AlarmService.cs" />
+    <Compile Include="Implementations\DataCommandEngineService.cs" />
+    <Compile Include="IMultiCommand.cs" />
+    <Compile Include="IOutput.cs" />
+    <Compile Include="IPanel.cs" />
+    <Compile Include="IPartition.cs" />
+    <Compile Include="ITeam.cs" />
+    <Compile Include="ITerminal.cs" />
+    <Compile Include="ITimezone.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CookComputing\src\xmlrpc.csproj">
+      <Project>{1B4B0A58-0AFB-4090-91DD-18912CC7DE65}</Project>
+      <Name>xmlrpc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

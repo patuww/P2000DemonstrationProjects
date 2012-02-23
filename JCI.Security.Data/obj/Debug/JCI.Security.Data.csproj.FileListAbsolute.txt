@@ -1,0 +1,10 @@
+C:\Source\p2000temp\Prototype\JCI.Security.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\JCI.Security.Data.dll
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\JCI.Security.Data.pdb
+C:\Source\p2000temp\Prototype\JCI.Security.Data\obj\Debug\JCI.Security.Data.dll
+C:\Source\p2000temp\Prototype\JCI.Security.Data\obj\Debug\JCI.Security.Data.pdb
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\Ninject.dll
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\Ninject.pdb
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\Ninject.xml
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\CookComputing.XmlRpcV2.dll
+C:\Source\p2000temp\Prototype\JCI.Security.Data\bin\Debug\CookComputing.XmlRpcV2.pdb
