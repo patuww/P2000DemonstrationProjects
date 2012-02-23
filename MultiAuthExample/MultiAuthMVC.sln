@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiAuthMVC", "MultiAuthMVC\MultiAuthMVC.csproj", "{C853B452-3290-4D42-A277-8416925EC6B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthenticationModule", "..\..\..\..\Desktop\formsauthwrapper_source_v1\FormsAuthenticationModule\FormsAuthenticationModule.csproj", "{7EBEDEC5-3777-4A83-A572-8CE5AFA97E15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C853B452-3290-4D42-A277-8416925EC6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C853B452-3290-4D42-A277-8416925EC6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C853B452-3290-4D42-A277-8416925EC6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C853B452-3290-4D42-A277-8416925EC6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBEDEC5-3777-4A83-A572-8CE5AFA97E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBEDEC5-3777-4A83-A572-8CE5AFA97E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBEDEC5-3777-4A83-A572-8CE5AFA97E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBEDEC5-3777-4A83-A572-8CE5AFA97E15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

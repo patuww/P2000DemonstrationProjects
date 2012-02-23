@@ -1,0 +1,9 @@
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\MultiAuthMVC.dll
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\MultiAuthMVC.pdb
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\EntityFramework.dll
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\EntityFramework.xml
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\obj\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\obj\Debug\MultiAuthMVC.dll
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\obj\Debug\MultiAuthMVC.pdb
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\Mvolo.FormsAuthenticationModule.dll
+c:\documents and settings\ckurowp\my documents\visual studio 2010\Projects\MultiAuthMVC\MultiAuthMVC\bin\Mvolo.FormsAuthenticationModule.pdb
