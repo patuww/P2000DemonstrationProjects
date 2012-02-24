@@ -67,31 +67,7 @@ namespace StartingPoint
 		}
         private double amountFor(Rental aRental)
         {
-            double result = 0;
-            // Determine amounts for each line
-            switch (aRental.Movie.PriceCode)
-            {
-                case PriceCodes.Regular:
-                    result += 2;
-                    if (aRental.DaysRented > 2)
-                    {
-                        result += (aRental.DaysRented - 2) * 1.5;
-                    }
-                    break;
-
-                case PriceCodes.NewRelease:
-                    result += aRental.DaysRented * 3;
-                    break;
-
-                case PriceCodes.Childrens:
-                    result += 1.5;
-                    if (aRental.DaysRented > 3)
-                    {
-                        result = (aRental.DaysRented - 3) * 1.5;
-                    }
-                    break;
-            }
-            return result;
+            return aRental.getCharge();
 
 
         }
