@@ -44,20 +44,13 @@ namespace StartingPoint
 				double thisAmount = 0;
 				Rental each = (Rental)rentals.Current;
 
-				
+                thisAmount = each.getCharge();
 
-				// Add frequent renter points
-				frequentRenterPoints++;
 
-				// Add bonus for a two-day new-release rental
-				if ((each.Movie.PriceCode == PriceCodes.NewRelease) && (each.DaysRented > 1))
-				{
-					frequentRenterPoints ++;
-				}
 
 				// Show figures for this rental
-				result += "\t" + each.Movie.Title + "\t" + thisAmount.ToString() + "\n";
-				totalAmount += thisAmount;
+				result += "\t" + each.Movie.Title + "\t" + each.getCharge().ToString() + "\n";
+				totalAmount += each.getCharge();
 			}
 
 			// Add footer lines
@@ -65,35 +58,13 @@ namespace StartingPoint
 			result += "You earned " + frequentRenterPoints.ToString() + " frequent renter points.";
 			return result;
 		}
-        private double amountFor(Rental each)
+        private double amountFor(Rental aRental)
         {
-            double thisAmount = 0;
-            // Determine amounts for each line
-            switch (each.Movie.PriceCode)
-            {
-                case PriceCodes.Regular:
-                    thisAmount += 2;
-                    if (each.DaysRented > 2)
-                    {
-                        thisAmount += (each.DaysRented - 2) * 1.5;
-                    }
-                    break;
-
-                case PriceCodes.NewRelease:
-                    thisAmount += each.DaysRented * 3;
-                    break;
-
-                case PriceCodes.Childrens:
-                    thisAmount += 1.5;
-                    if (each.DaysRented > 3)
-                    {
-                        thisAmount = (each.DaysRented - 3) * 1.5;
-                    }
-                    break;
-            }
-            return thisAmount;
+            return aRental.getCharge();
 
 
         }
+
+
 	}
 }
