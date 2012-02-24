@@ -65,33 +65,33 @@ namespace StartingPoint
 			result += "You earned " + frequentRenterPoints.ToString() + " frequent renter points.";
 			return result;
 		}
-        private double amountFor(Rental each)
+        private double amountFor(Rental aRental)
         {
-            double thisAmount = 0;
+            double result = 0;
             // Determine amounts for each line
-            switch (each.Movie.PriceCode)
+            switch (aRental.Movie.PriceCode)
             {
                 case PriceCodes.Regular:
-                    thisAmount += 2;
-                    if (each.DaysRented > 2)
+                    result += 2;
+                    if (aRental.DaysRented > 2)
                     {
-                        thisAmount += (each.DaysRented - 2) * 1.5;
+                        result += (aRental.DaysRented - 2) * 1.5;
                     }
                     break;
 
                 case PriceCodes.NewRelease:
-                    thisAmount += each.DaysRented * 3;
+                    result += aRental.DaysRented * 3;
                     break;
 
                 case PriceCodes.Childrens:
-                    thisAmount += 1.5;
-                    if (each.DaysRented > 3)
+                    result += 1.5;
+                    if (aRental.DaysRented > 3)
                     {
-                        thisAmount = (each.DaysRented - 3) * 1.5;
+                        result = (aRental.DaysRented - 3) * 1.5;
                     }
                     break;
             }
-            return thisAmount;
+            return result;
 
 
         }
