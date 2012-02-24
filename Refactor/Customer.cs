@@ -44,20 +44,13 @@ namespace StartingPoint
 				double thisAmount = 0;
 				Rental each = (Rental)rentals.Current;
 
-				
+                thisAmount = each.getCharge();
 
-				// Add frequent renter points
-				frequentRenterPoints++;
 
-				// Add bonus for a two-day new-release rental
-				if ((each.Movie.PriceCode == PriceCodes.NewRelease) && (each.DaysRented > 1))
-				{
-					frequentRenterPoints ++;
-				}
 
 				// Show figures for this rental
-				result += "\t" + each.Movie.Title + "\t" + thisAmount.ToString() + "\n";
-				totalAmount += thisAmount;
+				result += "\t" + each.Movie.Title + "\t" + each.getCharge().ToString() + "\n";
+				totalAmount += each.getCharge();
 			}
 
 			// Add footer lines
@@ -71,5 +64,7 @@ namespace StartingPoint
 
 
         }
+
+
 	}
 }

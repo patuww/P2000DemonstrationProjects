@@ -62,6 +62,21 @@ namespace StartingPoint
             return result;
 
 
+
+
+        }
+
+        public int GetFrequentRenterPoints()
+        {
+            // Add bonus for a two-day new-release rental
+            if ((Movie.PriceCode == PriceCodes.NewRelease) && (DaysRented > 1))
+            {
+                return 2;
+            }
+            else
+            {
+                return 1;
+            }
         }
 	}
 }
